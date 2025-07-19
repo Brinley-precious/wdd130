@@ -27,18 +27,7 @@ h1 {
     color: var(--primary-color);
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: var(--border-standard);
-    padding: var(--padding-img);
-    box-shadow: 0 0 30px gray;
-}
 main {max-width: 840px;}
-
-p {
-    padding: 0;
-}
 
 aside {
     width: 20rem;
@@ -53,6 +42,18 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: var(--border-standard);
+    padding: var(--padding-img);
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
 }
 
 footer {
