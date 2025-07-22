@@ -1,6 +1,3 @@
-
-/* rafting.css */
-
 :root {
   --primary-color: #002F99;       /* Dark Blue */
   --secondary-color: #2F4F4F;     /* Dark Slate Gray */
@@ -21,7 +18,7 @@
 /* Base body styles */
 body {
   font-family: var(--body-font);
-  color: var(--accent2-color);
+  color: var(--secondary-color);
   background-color: var(--accent1-color);
 }
 
@@ -31,19 +28,16 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Nav and content spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Hero section */
 .hero {
   position: relative;
 }
@@ -86,7 +80,6 @@ nav, p, section, article {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 12px;
@@ -94,7 +87,6 @@ footer {
   color: #fff;
 }
 
-/* Social media icons */
 .socialmedia a {
   text-decoration: none;
   margin: 0 10px;
