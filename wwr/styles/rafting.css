@@ -1,0 +1,106 @@
+
+/* rafting.css */
+
+:root {
+  --primary-color: #002F99;       /* Dark Blue */
+  --secondary-color: #2F4F4F;     /* Dark Slate Gray */
+  --accent1-color: #F0FFF0;       /* Honeydew */
+  --accent2-color: #1b6f1b;       /* Dark Green */
+
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Lora', serif;
+}
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  font-family: var(--body-font);
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+}
+
+/* Page container */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Nav and content spacing */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  font-weight: bold;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  max-width: 75%;
+  left: 10%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Social media icons */
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
