@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: 'lora', serif;
+      font-size: 16px;
+      line-height: 1.6;
+}
+
 :root {
     --primary-color: rebeccapurple;
     --text-color: white;
@@ -27,7 +38,9 @@ h1 {
     color: var(--primary-color);
 }
 
-main {max-width: 840px;}
+main {
+    max-width: 840px;
+}
 
 aside {
     width: 20rem;
@@ -44,7 +57,15 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+color: var(--aside-text-color);
+}
+
 main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
     width: 150px;
     height: auto;
     border: var(--border-standard);
@@ -60,4 +81,18 @@ footer {
     margin-top: 15px;
     border-top: var(--border-standard);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #f9f9ff;
+    /* for readability */
+    color: var(--aside-text-color);
+    /* dark gray/black for readability */
+}
+
+.indent {padding-left: 2rem;
 }
