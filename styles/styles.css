@@ -50,6 +50,7 @@ aside {
     background-color: var(--aside-background);
     color: var(--aside-text-color);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -58,9 +59,14 @@ aside img {
 }
 
 aside h2 {
-font-size: 1.5rem;
-margin-bottom: 0.5rem;
-color: var(--aside-text-color);
+    position: absolute;             
+    top: 47px;             
+    left: 90px;              
+    color: var(--text-color); 
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 main img {
@@ -88,10 +94,8 @@ footer {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: #f9f9ff;
-    /* for readability */
+    background-color: var(--aside-background);
     color: var(--aside-text-color);
-    /* dark gray/black for readability */
 }
 
 .indent {padding-left: 2rem;
