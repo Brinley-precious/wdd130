@@ -26,21 +26,26 @@ body {font-family: 'lora', serif;
 nav {
     background-color: var(--primary-color);
     padding: var(--padding-nav);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--text-color);
     display: block;
     padding: var(--padding-link);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
 }
 
-main {
-    max-width: 840px;
-}
 
 aside {
     width: 20rem;
@@ -100,3 +105,27 @@ footer {
 
 .indent {padding-left: 2rem;
 }
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+

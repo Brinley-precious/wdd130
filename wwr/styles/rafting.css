@@ -28,8 +28,6 @@ header {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
-  margin: 0 auto;
-  max-width: 960px;
 }
 
 header nav ul {
@@ -55,6 +53,7 @@ header h1 {
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .navigation li {
@@ -65,9 +64,10 @@ header h1 {
   display: block;
   text-decoration: none;
   color: var(--primary-color);
-  padding: 10px;
-  background-color: var(--accent2-color);
-  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
   font-weight: bold;
 }
 
@@ -96,6 +96,7 @@ header h1 {
   color: var(--accent1-color);
   background-color: var(--accent2-color);
   padding: 12px 0;
+  border-bottom: 2px solid var(--accent1-color);
 }
 
 .hero article {
@@ -159,7 +160,7 @@ header h1 {
 figcaption {
   margin-top: 0.5rem;
   font-weight: 400;
-  color: var(--primary-color);
+  color: white;
 }
 
 footer {
@@ -170,7 +171,6 @@ footer {
   color: white;
   padding: 1.5rem;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .socialmedia {
@@ -184,8 +184,8 @@ footer {
   height: 24px;
 }
 
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1rem;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
