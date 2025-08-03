@@ -45,7 +45,7 @@
         <!-- Google Map -->
        <div class="map">
         <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6638350886433!2d3.4214859!3d6.437203299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52a5f77936f%3A0xf896abbcb04669a!2s123%20Ozumba%20Mbadiwe%20St%2C%20Eti-Osa%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1754227646723!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6638350886433!2d3.4214859!3d6.437203299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52a5f77936f%3A0xf896abbcb04669a!2s123%20Ozumba%20Mbadiwe%20St%2C%20Eti-Osa%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1754227646723!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
        </div>
       </section>
@@ -80,14 +80,14 @@
           <input type="email" id="email" name="email" required>
 
           <p>Purpose of message:</p>
-          <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+          <label for="inquiry"><input type="radio" id="inquiry" name="purpose" value="inquiry" required> General Inquiry</label>
+          <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+          <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-          <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+          <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
           <button type="submit">Send Message</button>
         </form>
