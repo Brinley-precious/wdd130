@@ -118,15 +118,15 @@ header h1 {
 
 .history {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 10px;
-  align-items: center;
+  align-items: start;
 }
 
-.history-center h2 {
+.history-center h2{
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
@@ -134,6 +134,9 @@ header h1 {
 
 .history img {
   width: 100%;
+  height: auto;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
@@ -185,7 +188,8 @@ footer {
 }
 
 header, .grid, footer {
-    max-width: 840px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -522,4 +526,61 @@ footer a {
 
 .trip-table tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+
+/* ===== Minimal Mobile Responsiveness Fix ===== */
+@media screen and (max-width: 600px) {
+
+  /* Header + Navigation */
+  header {
+    grid-template-columns: 1fr; /* Stack logo/title/nav vertically */
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  /* Hero section adjustments */
+  .hero article,
+  .hero-text {
+    position: static; /* Remove absolute for better stacking */
+    width: 90%;
+    margin: 1rem auto;
+    transform: none;
+  }
+  .hero article img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100%;
+  }
+
+  /* Grid layouts -> single column */
+  .history,
+  .adventure .gallery,
+  .grid-container,
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Table responsiveness */
+  .trip-table table {
+    font-size: 0.85rem;
+  }
+  .trip-table th, .trip-table td {
+    padding: 0.5rem;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .socialmedia {
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
